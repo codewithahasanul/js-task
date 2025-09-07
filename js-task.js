@@ -60,3 +60,5 @@ var a = isNaN(2-10);
  * -8 is a valid number, not NaN.
  *  So, a = false
  */
+
+// So, Both cases will return: false.
