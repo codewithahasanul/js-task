@@ -36,8 +36,8 @@ Create a JavaScript program that calculates the Body Mass Index (BMI) and assign
     - Otherwise, you are obese.
 
 */
-let weight = 70;  
-let height = 1.75; 
+let weight = 70;
+let height = 1.75;
 
 let bmi = weight / (height * height);
 console.log("Your BMI is: " + bmi.toFixed(2));
@@ -72,7 +72,7 @@ Create a simple JavaScript program that takes a student's score as input and ret
 
 ***/
 
-let score = 95; 
+let score = 95;
 
 if (score >= 90 && score <= 100) {
     console.log("Grade: A");
@@ -102,8 +102,8 @@ Note:
 use nested if-else-if-else
 */
 
-let myScore = 85;      
-let friendScore = 33;   
+let myScore = 85;
+let friendScore = 33;
 
 if (myScore > 80) {
     if (friendScore > 80) {
@@ -118,3 +118,50 @@ if (myScore > 80) {
 } else {
     console.log("Go to home and sleep, act sad.");
 }
+
+
+
+/***
+
+you have two numbers in two variables, called: num1, num2
+
+now declare a variable called result. 
+if num1 is bigger than num2 then result will be double of num1. if not, then the value of the variable result will be the sum of num1 and num2.
+
+write a simple if-else. 
+
+also, write it using ternary operator.
+
+ */
+let num1 = 10;
+let num2 = 5;
+
+let result = (num1 > num2) ? (num1 * 2) : (num1 + num2);
+
+console.log("Result:", result);
+
+
+/***
+
+Ticket fare Calculator
+    - Children (age < 10): free
+    - Students get a 50% discount
+    - Senior citizens (age >= 60) gets a 15% Discount
+    - Otherwise Regular ticket fare 800 tk
+*/
+let age = 25;        
+let isStudent = true; 
+let fare = 800;     
+let ticketPrice;
+
+if (age < 10) {
+    ticketPrice = 0;
+} else if (isStudent) {
+    ticketPrice = fare * 0.5; // 50% discount
+} else if (age >= 60) {
+    ticketPrice = fare * 0.85; // 15% discount
+} else {
+    ticketPrice = fare;
+}
+
+console.log("Ticket Price:", ticketPrice, "tk");
