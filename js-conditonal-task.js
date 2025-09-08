@@ -165,3 +165,4 @@ if (age < 10) {
 }
 
 console.log("Ticket Price:", ticketPrice, "tk");
+
